@@ -2,10 +2,13 @@
   "name": "knowledgehub",
   "private": true,
   "workspaces": [
-    "sessions/*/*/demo"
+    "sessions/*/*/demo",
+    "sessions/*/*/slides"
   ],
   "dependencies": {},
   "devDependencies": {
+    "@slidev/cli": "^52.11.1",
+    "@slidev/theme-default": "^0.25.0",
     "vitepress": "^2.0.0-alpha.15"
   },
   "scripts": {

@@ -76,11 +76,19 @@ button:hover {
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
+}
+
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 0;
+    cursor: default;
 }
 
 .modal-content {
@@ -90,6 +98,7 @@ button:hover {
     max-width: 500px;
     width: 90%;
     position: relative;
+    z-index: 1;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 

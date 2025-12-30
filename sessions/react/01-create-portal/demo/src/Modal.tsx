@@ -14,9 +14,15 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
     if (!modalRoot) return null
 
     return createPortal(
-        <div className="modal-overlay" onClick={onClose}>
-            <div className="modal-content" onClick={e => e.stopPropagation()}>
-                <button type="button" className="modal-close" onClick={onClose}>
+        <div className="modal-overlay" role="dialog" aria-modal="true">
+            <button
+                type="button"
+                className="modal-backdrop"
+                onClick={onClose}
+                aria-label="モーダルを閉じる"
+            />
+            <div className="modal-content">
+                <button type="button" className="modal-close" onClick={onClose} aria-label="閉じる">
                     &times;
                 </button>
                 {children}

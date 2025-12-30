@@ -16,8 +16,8 @@
         "docs:dev": "vitepress dev docs",
         "docs:preview": "vitepress preview docs",
         "build:docs": "vitepress build docs",
-        "build:demos": "bun --filter 'demo' run build",
-        "build:slides": "bun --filter 'slides' run build",
+        "build:demos": "bun run --filter demo build",
+        "build:slides": "bun run --filter slides build",
         "check": "biome check .",
         "check:fix": "biome check --write .",
         "format": "biome format --write ."

@@ -1,0 +1,8 @@
+{
+    "name": "slides",
+    "private": true,
+    "scripts": {
+        "dev": "slidev",
+        "build": "slidev build --base /knowledgehub/sessions/ui-ux/01-focus-trap/slides/"
+    }
+}

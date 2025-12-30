@@ -1,0 +1,34 @@
+# =====================================
+# 依存関係
+# =====================================
+node_modules/
+
+# =====================================
+# ビルド成果物
+# =====================================
+# 共通
+out/
+dist/
+*.tgz
+
+# VitePress
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/public/slides/
+docs/public/demos/
+
+# Slidev
+.slidev/
+
+# sessions配下のビルド青果物
+sessions/**/demo/out/
+sessions/**/demo/dist/
+sessions/**/slides/dist/
+
+# =====================================
+# エディタ・IDE
+# =====================================
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

@@ -1,0 +1,23 @@
+{
+    "name": "knowledgehub",
+    "private": true,
+    "workspaces": [
+        "sessions/*/*/demo",
+        "sessions/*/*/slides"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "@biomejs/biome": "^2.3.10",
+        "@slidev/cli": "^52.11.1",
+        "@slidev/theme-default": "^0.25.0",
+        "vitepress": "^2.0.0-alpha.15"
+    },
+    "scripts": {
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs",
+        "check": "biome check .",
+        "check:fix": "biome check --write .",
+        "format": "biome format --write ."
+    }
+}

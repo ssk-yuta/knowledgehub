@@ -1,0 +1,16 @@
+{
+  "name": "knowledgehub",
+  "private": true,
+  "workspaces": [
+    "sessions/*/*/demo"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.15"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}

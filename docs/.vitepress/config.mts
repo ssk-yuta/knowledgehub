@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: "/knowledgehub/",
     title: "Knowledge Hub",
     description: "Personal learning hub and study sessions",
     themeConfig: {

@@ -1,5 +1,5 @@
 {
-    "name": "slides-uiux-01-focus-trap",
+    "name": "slides",
     "private": true,
     "scripts": {
         "dev": "slidev",
